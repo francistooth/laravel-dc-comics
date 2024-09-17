@@ -5,7 +5,12 @@
 
 
 body {
-    background-image: url('../img/bosco.jpg');
+    // background-image: url('../img/bosco.jpg');
     background-size: cover;
     font-family: "Roboto", sans-serif;
+}
+
+.thumb {
+    height: 300px;
+    width: 300px;
 }
