@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="container my-5">
+<div class="container-fluid my-5">
     <table>
         <tr>
             {{-- <th scope="col">id</th> --}}
@@ -13,6 +13,7 @@
             <th scope="col">Series</th>
             <th scope="col">Sale Date</th>
             <th scope="col">Type</th>
+            <th scope="col">Show</th>
         </tr>
         @foreach ($comics as $comic)
             <tr>
@@ -24,6 +25,7 @@
                 <td scope="col">{{$comic->series}}</td>
                 <td scope="col">{{$comic->sale_date}}</td>
                 <td scope="col">{{$comic->type}}</td>
+                <td scope="col"><a href="{{ route('comics.show', $comic) }}" class="btn btn-success"> <i class="fa-solid fa-eye"></i> </a></td>
             </tr>
         @endforeach
     </table>
