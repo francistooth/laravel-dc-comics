@@ -8,8 +8,8 @@
             <div class="col"> <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="img-fluid"> </div>
             <div class="col"><b> Descrizione:  </b> {{ $comic->description }} </div>
             <div class="col"> <b> Prezzo: </b> {{ $comic->price }} </div>
-
-            <a href="{{ route('comics.index') }}" class="btn btn-check"> Elenco Fumetti </a>
         </div>
+
+        <a href="{{ route('comics.index') }}" class="btn btn-success my-5"> Elenco Fumetti </a>
     </div>
 @endsection
